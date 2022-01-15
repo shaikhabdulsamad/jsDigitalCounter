@@ -121,6 +121,14 @@ margin-left: 10px;
         width: 80%;
        
     }
+
+    .countDiv>input{
+     
+        font-size: 24px;
+     }
+     .setTarget>span , .resetBtn{
+         font-size: 15px;
+     }
 }
 @media only screen and (max-width: 500px){
 
@@ -134,12 +142,6 @@ margin-left: 10px;
        font-size: 24px;
     }
    
-    .countDiv>input{
-     
-       font-size: 24px;
-    }
-    .setTarget>span , .resetBtn{
-        font-size: 15px;
-    }
+ 
 
 }
