@@ -83,6 +83,12 @@ margin-left: 10px;
 
 }
 
+.setTarget>span, .resetBtn{
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
 
 @media only screen and (max-width: 1350px){
   
@@ -119,7 +125,7 @@ margin-left: 10px;
 @media only screen and (max-width: 500px){
 
    .logo{
-       font-size: 40px;
+       font-size: 30px;
    }
    
     .countDiv{
@@ -131,6 +137,9 @@ margin-left: 10px;
     .countDiv>input{
      
        font-size: 24px;
+    }
+    .setTarget>span , .resetBtn{
+        font-size: 15px;
     }
 
 }
