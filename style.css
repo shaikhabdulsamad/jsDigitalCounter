@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+#counter{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+.heading{
+background-color: brown;
+/* color: white; */
+padding: 20px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 15vh;
+}
+.logo{
+    font-size: 50px;
+}
+.body{
+    background-color: lightgrey;
+   /* padding: 20px 0; */
+   height: 75vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.countDiv{
+    background-color: white;
+    width: 50%;
+    padding: 50px;
+    font-size: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.countDiv>input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 40px;
+    width: 30%;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+.countBtn{
+    width: 50%;
+    margin-top: 30px;
+    
+}
+.countBtn>button{
+    width: 100%;
+    background-color: brown;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+padding: 15px 0;
+color: white;
+}
+.input, .slash{
+    display: none;
+}
+.footer{
+    background-color: brown;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.setTarget>span{
+background-color: white;
+margin-left: 10px;
+
+}
+
+
+@media only screen and (max-width: 1350px){
+  
+    .countDiv{
+      
+        width: 80%;
+       
+    }
+}
+@media only screen and (max-width: 850px){
+
+    #counter{
+        width: 100%;
+        text-align: center;
+        
+    }
+   
+    .countDiv{
+      
+        width: 60%;
+       
+    }
+}
+@media only screen and (max-width: 700px){
+
+   
+   
+    .countDiv{
+      
+        width: 80%;
+       
+    }
+}
+@media only screen and (max-width: 500px){
+
+   .logo{
+       font-size: 40px;
+   }
+   
+    .countDiv{
+      
+        width: 95%;
+       font-size: 24px;
+    }
+   
+    .countDiv>input{
+     
+       font-size: 24px;
+    }
+
+}
