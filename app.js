@@ -7,6 +7,8 @@ let simpleCntr = document.getElementById('simpleCounter')
 let counterTarget = document.getElementById('counterTarget')
 let svTar = document.getElementById('saveTarget')
 let stTar = document.getElementById('setTarget')
+let restAll = document.getElementById('resetAll')
+restAll.style.display = 'none'
 simpleCntr.style.display = 'none'
 svTar.style.display = 'none'
 stTar.style.display = 'none'
@@ -21,20 +23,31 @@ const reset = () => {
     countBtn.disabled = false
     countBtn.style.color = 'white'
 }
+const resetAll = () => {
+    counter = 0
+    num.innerText = '00'
+    input.value = '9999'
+    input.style.borderBottom = '2px solid black'
+    input.disabled = false
+}
 
 
 const setTarget = () => {
     input.style.borderBottom = '2px solid black'
     input.disabled = false
 }
+
 const saveTarget = () => {
     input.disabled = true
     input.style.borderBottom = 'none'
-    input.value < 10 ? input.value = `0${input.value}` : true
+    let inputValue = input.value
+    inputValue.length < 2 ? input.value = `0${input.value}` : true
 
 }
 
 const counterWithTarget = () => {
+    counter = 0
+    num.innerText = '00'
     counterWithTargetOn = true
     input.style.display = 'block'
     slash.style.display = 'block'
@@ -44,6 +57,7 @@ const counterWithTarget = () => {
     counterTarget.style.display = 'none'
     svTar.style.display = 'inline-block'
     stTar.style.display = 'inline-block'
+    restAll.style.display = 'inline-block'
 }
 const simpleCounter = () => {
     counterWithTargetOn = false
