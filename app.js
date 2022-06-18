@@ -47,7 +47,7 @@ const saveTarget = () => {
 
 const counterWithTarget = () => {
     counter = 0
-    num.innerText = '00'
+    num.innerText = '9999'
     counterWithTargetOn = true
     input.style.display = 'block'
     slash.style.display = 'block'
