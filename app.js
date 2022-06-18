@@ -60,6 +60,8 @@ const counterWithTarget = () => {
     restAll.style.display = 'inline-block'
 }
 const simpleCounter = () => {
+    counter = 0
+    num.innerText = '00'
     counterWithTargetOn = false
     input.style.display = 'none'
     slash.style.display = 'none'
@@ -67,11 +69,12 @@ const simpleCounter = () => {
     counterTarget.style.display = 'block'
     svTar.style.display = 'none'
     stTar.style.display = 'none'
+    restAll.style.display = 'none'
 }
 
 const count = () => {
     if (counterWithTargetOn === true) {
-        if (input.disabled === true) {
+        if (input.disabled === true && input.value > 0) {
             counter++
             counter < 10 ? num.innerText = `0${counter}` : num.innerText = `${counter}`
 
