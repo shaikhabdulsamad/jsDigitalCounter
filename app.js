@@ -26,6 +26,8 @@ const reset = () => {
 const resetAll = () => {
     counter = 0
     num.innerText = '00'
+    countBtn.disabled = false
+    countBtn.style.color = 'white'
     input.value = '9999'
     input.style.borderBottom = '2px solid black'
     input.disabled = false
